@@ -1,7 +1,7 @@
 {
   "name": "kaiseki/wp-env",
   "type": "library",
-  "description": "ACF Helper Library",
+  "description": "WordPress Environment Helper",
   "license": "MIT",
   "homepage": "https://github.com/kaisekidev/kaiseki-wp-env",
   "authors": [
