@@ -3,7 +3,8 @@
         "null", "true", "false",
         "static", "self", "parent",
         "array", "string", "int", "float", "bool", "iterable", "callable", "void", "object",
-        "wp_get_environment_type"
+        "wp_get_environment_type",
+        "WP_ENV"
     ],
     "php-core-extensions" : [
         "Core",
