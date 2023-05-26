@@ -59,13 +59,13 @@
   },
   "autoload": {
     "psr-4": {
-      "Kaiseki\\WordPress\\Env\\": "src"
+      "Kaiseki\\WordPress\\Environment\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Kaiseki\\Test\\Functional\\WordPress\\Env\\": "tests/functional",
-      "Kaiseki\\Test\\Unit\\WordPress\\Env\\": "tests/unit"
+      "Kaiseki\\Test\\Functional\\WordPress\\Environment\\": "tests/functional",
+      "Kaiseki\\Test\\Unit\\WordPress\\Environment\\": "tests/unit"
     }
   },
   "repositories": [],
