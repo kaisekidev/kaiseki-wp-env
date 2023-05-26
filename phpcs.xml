@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<ruleset name="wp-env coding standard">
+    <rule ref="Kaiseki"/>
+
+    <arg name="parallel" value="80"/>
+
+    <file>src</file>
+    <file>tests</file>
+</ruleset>
