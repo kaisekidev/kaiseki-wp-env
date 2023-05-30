@@ -8,6 +8,8 @@ interface EnvironmentInterface
 {
     public function get(): string;
 
+    public function is(string ...$environments): bool;
+
     public function isDevelopment(): bool;
 
     public function isLocal(): bool;

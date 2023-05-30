@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Kaiseki\WordPress\Environment;
 
+use function in_array;
+
 abstract class AbstractEnvironment
 {
     private const DEVELOPMENT = 'development';
@@ -12,6 +14,11 @@ abstract class AbstractEnvironment
     private const STAGING = 'staging';
 
     abstract protected function get(): string;
+
+    public function is(string ...$environments): bool
+    {
+        return in_array($this->get(), $environments, true);
+    }
 
     public function isDevelopment(): bool
     {
