@@ -15,6 +15,7 @@ final class ConfigProvider
             'dependencies' => [
                 'aliases' => [
                     EnvironmentInterface::class => Environment::class,
+                    StaticEnvironmentInterface::class => StaticEnvironment::class,
                 ],
             ],
         ];
