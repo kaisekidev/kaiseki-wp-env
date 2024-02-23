@@ -6,6 +6,7 @@ namespace Kaiseki\WordPress\Environment;
 
 use function defined;
 use function in_array;
+use function wp_get_environment_type;
 
 class Environment extends AbstractEnvironment implements EnvironmentInterface
 {
@@ -14,6 +15,7 @@ class Environment extends AbstractEnvironment implements EnvironmentInterface
         if (defined('WP_ENV')) {
             return WP_ENV;
         }
+
         return wp_get_environment_type();
     }
 
