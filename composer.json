@@ -53,9 +53,7 @@
     "allow-plugins": {
       "phpstan/extension-installer": true,
       "roots/wordpress-core-installer": true,
-      "composer/installers": true,
-      "dealerdirect/phpcodesniffer-composer-installer": false,
-      "infection/extension-installer": false
+      "composer/installers": true
     },
     "process-timeout": 0
   },
