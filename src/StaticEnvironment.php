@@ -6,13 +6,14 @@ namespace Kaiseki\WordPress\Environment;
 
 use function defined;
 use function in_array;
+use function is_string;
 use function wp_get_environment_type;
 
 class StaticEnvironment extends AbstractEnvironment implements StaticEnvironmentInterface
 {
     public static function get(): string
     {
-        if (defined('WP_ENV')) {
+        if (defined('WP_ENV') && is_string(WP_ENV)) {
             return WP_ENV;
         }
 
