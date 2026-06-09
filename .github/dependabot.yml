@@ -5,8 +5,8 @@
 # weekly PR to cut noise (a fresh config otherwise opens one PR per action per
 # repo). Production (runtime) composer deps get individual PRs because they affect
 # downstream consumers and warrant review. Production majors that don't build
-# green yet are held under `ignore` (below) — drop the entry once the package
-# builds on that major.
+# green yet are a deliberate per-package choice: add an `ignore:` entry under
+# the composer ecosystem when needed.
 
 version: 2
 updates:
